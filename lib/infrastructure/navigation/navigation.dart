@@ -59,7 +59,7 @@ class Nav {
     GetPage(
       name: Routes.CHECKOUT,
       page: () => const CheckoutScreen(),
-      binding: CheckoutControllerBinding(),
+      binding: OfficeControllerBinding(),
     ),
   ];
 }

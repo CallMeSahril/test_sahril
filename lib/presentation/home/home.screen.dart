@@ -59,7 +59,7 @@ final List<Map<String, dynamic>> items = [
     'title': 'Check Out',
     'icon': Icons.logout,
     'onTap': () {
-      // Handle Check Out tap
+      Get.toNamed(Routes.CHECKOUT);
     },
   },
 ];

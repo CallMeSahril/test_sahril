@@ -53,16 +53,6 @@ class CheckinScreen extends GetView<OfficeController> {
                       ),
                       MarkerLayer(markers: [
                         Marker(
-                          point: controller.currentLocation!,
-                          width: 30,
-                          height: 30,
-                          child: Icon(
-                            Icons.location_on,
-                            color: Colors.blue,
-                            size: 30,
-                          ),
-                        ),
-                        Marker(
                           width: 80.0,
                           height: 80.0,
                           point: LatLng(
@@ -74,6 +64,16 @@ class CheckinScreen extends GetView<OfficeController> {
                             Icons.location_on,
                             color: Colors.red,
                             size: 40,
+                          ),
+                        ),
+                        Marker(
+                          point: controller.currentLocation!,
+                          width: 30,
+                          height: 30,
+                          child: Icon(
+                            Icons.location_on,
+                            color: Colors.blue,
+                            size: 30,
                           ),
                         ),
                       ]),
